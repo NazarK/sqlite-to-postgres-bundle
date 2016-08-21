@@ -1,0 +1,11 @@
+GEMFILE bundle for moving data from sqlite to postgres
+
+1. bundle
+
+2. start taps server for sqlite database
+
+bundle exec taps server sqlite:/home/nazar/tmp/development.sqlite3 user pass
+
+3. pull to postgres database
+
+bundle exec taps pull postgres://root:root@localhost/accounting http://user:pass@localhost:5000
